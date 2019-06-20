@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Tooltip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <br><br>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+  <button class="btn btn-primary" data-toggle="tooltip" title="Bootstrap Title">Tooltip button</button>
+  <button class="btn btn-primary" data-toggle="tooltip" title="Top Bootstrap Title" data-placement="top">Top Tooltip button</button>
+  <button class="btn btn-primary" data-toggle="tooltip" title="Bottom Bootstrap Title" data-placement="bottom">Bottom Tooltip button</button>
+  <button class="btn btn-primary" data-toggle="tooltip" title="Right Bootstrap Title" data-placement="right">Right Tooltip button</button>
+  <button class="btn btn-primary" data-toggle="tooltip" title="Left Bootstrap Title" data-placement="left">Left Tooltip button</button>
+</div>
+<hr>
+<h5>Click button for Popover Example</h5>
+<button class="btn btn-primary" data-toggle="popover" id = "btnPopover"
+        title="Popover Title" data-content="Popover content. Popover content. Popover content">
+        Popover button
+</button>
+<button class="btn btn-primary" data-toggle="popover" id = "btnPopover1"
+        title="Popover Title" data-content="Popover content. Popover content. Popover content"
+        data-trigger="hover">
+        Hover Popover button
+</button>
+<button class="btn btn-primary" data-toggle="popover" id = "btnPopover2"
+        title="Popover Title" data-content="Popover content. Popover content. Popover content"
+        data-trigger="focus">
+        Focus Popover button
+</button>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+$(document).ready(function(){
+  $('#btnPopover').popover();
+});
+$(document).ready(function(){
+  $('#btnPopover1').popover();
+});
+$(document).ready(function(){
+  $('#btnPopover2').popover();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/CustomStyle.css" rel="stylesheet"/>
+    <title>Bootstrap Cheat sheet</title>
+  </head>
+  <body>
+    <div class="container">
+    <!--Glyphicon-->
+    <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+    </div>
+    <!--Link Dropdown-->
+    <div class="container">
+    <div class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown">Drop down<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action 1</a></li>
+        <li><a href="#">Action 2</a></li>
+        <li><a href="#">Action 3</a></li>
+        <li>Action 1</li>
+        <li>Action 2</li>
+        <li>Action 3</li>
+        </ul>
+      </div>
+      </div>
+      <hr>
+      <!--Button Dropdown-->
+      <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Drop down<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Header 1</li>
+          <li><a href="#">Action 1</a></li>
+          <li class="disabled"><a href="#">Action 2</a></li>
+          <li><a href="#">Action 3</a></li>
+          <li class="dropdown-divider"></li>
+          <li class="dropdown-header">Header 2</li>
+          <li><a href="#">Action 1</a></li>
+          <li class="disabled"><a href="#">Action 2</a></li>
+          <li><a href="#">Action 3</a></li>
+          </ul>
+        </div>
+        </div>
+        <hr>
+        <!--Grid system-->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-2 col-sm-2">
+                <div class="customDiv">left side bar</div>
+              </div>
+              <div class="col-md-8 col-sm-8">
+                <div class="customDiv">Main bar</div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="customDiv">Right side bar</div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="customDiv">Column 1</div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="customDiv">Column 2</div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="customDiv">Column 3</div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="customDiv">Column 4</div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <!--Grid offset-->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-md-offset-3">
+                <div class="customDiv">Column 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="customDiv">Column 2</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="customDiv">Column 1</div>
+              </div>
+              <div class="col-md-3">
+                <div class="customDiv">Column 2</div>
+              </div>
+              <div class="col-md-3">
+                <div class="customDiv">Column 3</div>
+              </div>
+              <div class="col-md-3">
+                <div class="customDiv">Column 4</div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <!--Nested rows and columns-->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="sidebarContent">Column 1</div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="sidebarContent">Column 3</div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="mainbarContent">Column 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <!--Responsive utility classes, visible and hidden-->
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-4 col-sm-6 col-xs-12">
+                <div class="customDiv">All Screens</div>
+              </div>
+              <div class="col-lg-3 col-sm-4 col-sm-6 col-xs-12 hidden-xs">
+                <div class="customDiv">Medium, Large and small</div>
+              </div>
+              <div class="col-lg-3 col-sm-4 col-sm-6 col-xs-12 visible-md visible-lg">
+                <div class="customDiv">Medium and Large</div>
+              </div>
+              <div class="col-lg-3 col-sm-4 col-sm-6 col-xs-12 visible-lg">
+                <div class="customDiv">Large</div>
+              </div>
+            </div>
+        </div>
+        <hr>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
